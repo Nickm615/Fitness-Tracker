@@ -30,7 +30,7 @@ To deploy an application with a MongoDB database to Heroku, you'll need to set u
 
   * [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
 
-  * [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
+  * [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)                
 
 ## Commit Early and Often
 
