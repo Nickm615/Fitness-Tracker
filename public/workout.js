@@ -1,3 +1,5 @@
+
+
 async function initWorkout() {
   const lastWorkout = await API.getLastWorkout();
   console.log("Last workout:", lastWorkout);
@@ -7,10 +9,10 @@ async function initWorkout() {
       .setAttribute("href", `/exercise?id=${lastWorkout._id}`);
 
     const workoutSummary = {
-      date: formatDate(lastWorkout.day),
-      totalDuration: lastWorkout.totalDuration,
-      numExercises: lastWorkout.exercises.length,
-      ...tallyExercises(lastWorkout.exercises)
+      date: formatDate(lastWorkout[0].day),
+      totalDuration: lastWorkout[0].totalDuration,
+      numExercises: lastWorkout[0].exercises.length,
+      ...tallyExercises(lastWorkout[0].exercises)
     };
 
     renderWorkoutSummary(workoutSummary);
@@ -82,3 +84,5 @@ function renderNoWorkoutText() {
 }
 
 initWorkout();
+
+//where does this aggregate go??
