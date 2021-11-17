@@ -1,6 +1,4 @@
-const express = require("express");
 const router = require('express').Router();
-const Workout = require('../models/Workout');
 const path = require("path");
 const apiRoutes = require('./api');
 
@@ -14,6 +12,7 @@ router.get('/exercise', (req, res)=>{
 router.get('/stats', (req,res)=>{
     res.sendFile(path.join(__dirname, '../public/stats.html'))
 })
+
 
 module.exports = router
 
