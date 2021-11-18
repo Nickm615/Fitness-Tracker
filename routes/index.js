@@ -2,7 +2,6 @@ const express = require("express")
 const router = require('express').Router();
 const path = require("path");
 const apiRoutes = require('./api');
-const { Workout } = require('../models/Workout')
 
 router.use('/api', apiRoutes)
 
