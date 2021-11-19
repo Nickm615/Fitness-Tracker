@@ -3,7 +3,7 @@ const router = require('express').Router();
 const path = require("path");
 const apiRoutes = require('./api');
 
-router.use('/api', apiRoutes)
+// router.use('/api', apiRoutes)
 
 router.get('/exercise', (req, res)=>{
     // console.log(req.query)

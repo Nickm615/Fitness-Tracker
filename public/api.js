@@ -7,7 +7,7 @@ const API = {
       console.log(err)
     }
     const json = await res.json();
-    console.log(json)
+    // console.log(json)
 
     return json;
   },
@@ -29,7 +29,9 @@ const API = {
       method: "POST",
       body: JSON.stringify(data),
       headers: { "Content-Type": "application/json" }
+      
     });
+    // console.log(body)
 
     const json = await res.json();
 
